@@ -1,0 +1,22 @@
+{
+    "name": "assoidi/salutation",
+    "description": "Retour un message de salution",
+    "type": "composer-plugin",
+    "license": "MTI",
+    "require": {
+        "php": ">=7.0 <=8.2",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NomUtilisateur\\Salutation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "planme\\Salutation\\SalutationServiceProvider"
+            ]
+        }
+    }
+}
