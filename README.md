@@ -30,8 +30,11 @@ use NomUtilisateur\Salutation\Facades\Salutation;
 // Retourner le message de salutation en fonction de l'heure actuelle
 $message = Salutation::greet();
 
+```
+
 
 ### Helper
+
 
 Vous pouvez également utiliser la fonction helper salutation() pour retourner le message de salutation :
 
@@ -48,7 +51,7 @@ Le package fournit également une directive Blade pour afficher le message de sa
 
 Vous pouvez personnaliser les messages de salutation et les plages horaires en modifiant le fichier de configuration config/salutation.php :
 
-<code>
+```php
 return [
     'greetings' => [
         'morning' => 'Bonjour',
@@ -64,7 +67,7 @@ return [
         'night' => ['start' => '22:00', 'end' => '04:59'],
     ],
 ];
-</code>
+```
 
 ### Licence
 
